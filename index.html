@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conquering Responsive Layout - Final Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- thanks to Kevin Powell https://courses.kevinpowell.co/conquering-responsive-layouts -->
+</head>
+<body>
+    <header> 
+        <div class="container row">
+            <button class="nav-toggle" aria-label="open navigation">
+                <span class="hamburger"></span>
+            </button>
+            <a class="logo" href="#">
+                <img src="img/logo.svg" alt="Conquering Responsive Layouts logo">
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Sign In</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--button btn">Sign up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="section hero">
+        <div class="container row">            
+            <h1 class="hero__title"><span class="white">Responsive layouts&nbsp;</span><br>don’t have to be a struggle</h1>
+            <div class="hero__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="btn hero__btn">I want to learn</a>
+            </div>
+        </div>
+    </section> 
+    
+    <section class="section section--two">
+        <div class="container row">        
+            <div class="col">
+                <h2 class="col__title">Mobile-first</h2>
+                <p class="col__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra augue id dolor viverra vulputate. Integer diam ipsum, varius eu lorem quis, rutrum elementum urna. Sed eleifend accumsan hendrerit.
+                </p>
+            </div>
+            <div class="col">
+                <h2 class="col__title">Efficient</h2>
+                <p class="col__text">
+                    Sed diam orci, semper quis ipsum quis, semper feugiat leo. Cras vulputate lobortis neque at viverra. Donec eu eros eu tortor fermentum finibus vitae et quam. Maecenas ultrices, sapien non laoreet eleifend
+                </p>
+            </div>
+            <div class="col">
+                <h2 class="col__title">Done right</h2>
+                <p class="col__text">Usce nibh neque, sagittis nec sem condimentum, ultrices vulputate lorem. Aliquam commodo dui eget velit tincidunt maximus. Donec consequat in ligula non aliquam. Suspendisse potenti. Proin metus tortor, bibendum non erat et, porttitor rhoncus velit.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <main class="main container">
+        <section class="section primary-content">
+            <h2 class="primary-content__title">It doesn’t have to be so hard</h2>
+            <p class="primary-content__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <img src="img/content-img.webp" alt="UX design sketches" class="primary-content__img">
+            <p class="primary-content__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </section>
+        <aside class="section sidebar col">
+            <div class="col">
+                <h2 class="col__title">Break it down</h2>
+                <p class="col__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+            <div class="col">
+                <h2 class="col__title">Work your way up</h2>
+                <p class="col__text">Sed diam orci, semper quis ipsum quis, semper feugiat leo. Cras vulputate lobortis neque at viverra. Donec eu eros eu tortor.
+                </p>
+            </div>
+            <div class="col">
+                <h2 class="col__title">Keep on trying</h2>
+                <p class="col__text">Usce nibh neque, sagittis nec sem condimentum, ultrices vulputate lorem. Aliquam commodo dui eget velit tincidunt maximus. 
+                </p>
+            </div>
+        </aside>
+    </main>
+    <footer class="section footer">
+        <div class="footer__title--container container">
+            <h2 class="footer__title">just scratching the surface</h2>
+        </div>
+        <div class="footer__content container">
+            <div class="footer__long-text container">
+                <h3 class="footer__subtitle">About our company</h3>
+                <p class="footer__text">Nec feugiat in fermentum posuere. Ut porttitor leo a diam sollicitudin tempor id. Faucibus in ornare quam viverra. Sit amet commodo nulla facilisi. Non pulvinar neque laoreet suspendisse interdum consectetur libero.</p>
+            </div>
+            <div class="footer__cols">
+                <div class="col">
+                    <h3 class="footer__subtitle">Getting around</h3>
+                    <ul class="footer__links footer__links-one">
+                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3 class="footer__subtitle">Other things</h3>
+                    <ul class="footer__links footer__links-two">
+                        <li class="nav__item"><a href="#" class="nav__link">Lorem</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Ipsum</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Justo</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Mattis</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3 class="footer__subtitle">And more stuff</h3>
+                    <ul class="footer__links footer__links-two">
+                        <li class="nav__item"><a href="#" class="nav__link">Rhoncus</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Nunc</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Egestas</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Massa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    
+    
+    
+    <script src="main.js"></script>    
+</body>
+</html>
